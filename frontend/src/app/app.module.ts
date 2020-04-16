@@ -15,6 +15,7 @@ import { HomeComponent } from './views/home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { ProductComponent } from './views/product/product.component';
 import { BlueDirective } from './directives/blue.directive';
+import { ForDirective } from './directives/for.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BlueDirective } from './directives/blue.directive';
     NavComponent,
     HomeComponent,
     ProductComponent,
-    BlueDirective
+    BlueDirective,
+    ForDirective
   ],
   imports: [
     BrowserModule,
