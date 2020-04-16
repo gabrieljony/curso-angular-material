@@ -14,6 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { ProductComponent } from './views/product/product.component';
+import { BlueDirective } from './directives/blue.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProductComponent } from './views/product/product.component';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ProductComponent
+    ProductComponent,
+    BlueDirective
   ],
   imports: [
     BrowserModule,
