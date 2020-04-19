@@ -31,6 +31,7 @@ import { registerLocaleData } from  '@angular/common';
 import { TableComponent } from './components/schematics/table/table.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 registerLocaleData(localePt);
 
 @NgModule({
@@ -45,7 +46,8 @@ registerLocaleData(localePt);
     ForDirective,
     ProductCreateComponent,
     ProductReadComponent,
-    TableComponent
+    TableComponent,
+    ProductUpdateComponent
   ],
   imports: [
     BrowserModule,
