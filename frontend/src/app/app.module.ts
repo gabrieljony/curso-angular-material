@@ -28,6 +28,9 @@ import { MatTableModule } from '@angular/material/table';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from  '@angular/common';
+import { TableComponent } from './components/schematics/table/table.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 registerLocaleData(localePt);
 
 @NgModule({
@@ -41,7 +44,8 @@ registerLocaleData(localePt);
     BlueDirective,
     ForDirective,
     ProductCreateComponent,
-    ProductReadComponent
+    ProductReadComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +61,9 @@ registerLocaleData(localePt);
     MatSnackBarModule,
     MatFormFieldModule,
     MatInputModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [{
     provide: LOCALE_ID,
