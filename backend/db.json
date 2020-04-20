@@ -16,14 +16,19 @@
       "price": 5000.89
     },
     {
-      "id": 4,
-      "name": "Redmi Note 8",
-      "price": 1500.89
+      "name": "telefone",
+      "price": "50,00",
+      "id": 4
     },
     {
-      "id": 5,
-      "name": "Controle PC",
-      "price": "150.00"
+      "name": "telefone",
+      "price": "50.00",
+      "id": 5
+    },
+    {
+      "name": "telefone 2",
+      "price": "50,00",
+      "id": 6
     }
   ]
 }

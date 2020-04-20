@@ -19,7 +19,8 @@ export class ProductService {
     this.snackbar.open(msg, 'x', {
       duration: 3000,
       horizontalPosition: "right",
-      verticalPosition: "top"
+      verticalPosition: "top",
+      panelClass: isError ? ["msg-error"] : ["msg-success"],
     })
   }
 
@@ -69,6 +70,7 @@ export class ProductService {
   }
 
   errorHandler(e: any): Observable<any> {
+    console.log(e)
     this.showMessage("Ocorreu um erro!", true);
     return EMPTY;
   }
